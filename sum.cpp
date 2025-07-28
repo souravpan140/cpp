@@ -1,13 +1,16 @@
 
 #include<iostream>
-using namespace std; 
-int main(){
-    int a,b,sum;
-    cout<<"Enter the first number:";
-    cin>>a;
-    cout<<"Enter the second number :";
-    cin>>b;
-    sum=a+b;
-    cout<<"The sum is:"<<sum;
+using namespace std;
+
+int main() {
+    int n, sum = 0;
+    cout << "Enter the number: ";
+    cin >> n;
+
+    for (int i = 0; i <= n; i++) {
+        sum += i;
+    }
+
+    cout << "The sum is: " << sum << endl;
     return 0;
 }
